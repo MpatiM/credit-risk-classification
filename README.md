@@ -24,9 +24,16 @@ Use your knowledge of logistic regression to complete the following steps:
     o	Print the classification report.
 4.	Answer the following question: **How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?**
 
-## Write a Credit Risk Analysis Report
-Write a brief report that includes a summary and analysis of the performance of the machine learning models that you used in this homework. You should write this report as the README.md file included in your GitHub repository.
-Structure your report by using the report template that Starter_Code.zip includes, ensuring that it contains the following:
-1.	An overview of the analysis: Explain the purpose of this analysis.
-2.	The results: Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
-3.	A summary: Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+## Credit Risk Analysis Report
+The purpose of fitting the Logistic Regression Model to the lending data is to classify and test the prediction accuracy of whether the data is considered a healthy loan, marked '0', or a high-risk loan, marked as '1'. Once we can assess the classification, if the prediction rate is good, that means the model can be used reliably to classify lending data loan status.
+
+Model Scores:
+* Accuracy Score: 0.99 -> 99% accuracy
+* Precision Score:
+    * Healthy loan - 1.00 -> 100% precision
+    * High-Risk loan - 0.85 -> 85% precision
+* Recall Score:
+    * Healthy loan - 0.99 -> 99% recall
+    * High-Risk loan - 0.91 -> 91% recall
+
+The logistic regression model does really well overall with an accuracy of 99%. The model does the best in predicting '0', healthy loan, where the precision is 100% and recall is 99%. The model also predicts '1', high-risk loan, just as well with a precision of 85% and a recall of 91% but the overall percentage of prediction is lower. However, the model can be improved since the balance between healthy loan and high-risk loan is not balanced. About 96% (18765 out of 19384)of the data is considered a healthy loan and accurately predicts 18663 points of data. On the other hand, only 619 out of 19384 of the data is considered high-risk loan and accurately predicts 563 points of data. If the model were to balance the data between the two to become more even, the model prediction may change but it would make the resulting accuracy more reliable, so therefore, I would recommend this model.
