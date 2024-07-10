@@ -2,9 +2,9 @@
 The Module 20 assignment was completed to asses understanding of Machine Learning Supervised Learning.
 
 **Following subsections were performed:**
-•	Split the Data into Training and Testing Sets
-•	Create a Logistic Regression Model with the Original Data
-•	Write a Credit Risk Analysis Report
+* Split the Data into Training and Testing Sets
+* Create a Logistic Regression Model with the Original Data
+* Write a Credit Risk Analysis Report
 
 ## Split the Data into Training and Testing Sets
 Open the starter code notebook and use it to complete the following steps:
